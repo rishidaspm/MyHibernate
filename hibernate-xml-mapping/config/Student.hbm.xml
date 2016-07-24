@@ -1,0 +1,20 @@
+<?xml version="1.0"?>
+<!DOCTYPE hibernate-mapping PUBLIC "-//Hibernate/Hibernate Mapping DTD 3.0//EN" "http://hibernate.sourceforge.net/hibernate-mapping-3.0.dtd">
+<!-- Generated Jul 23, 2016 1:04:35 AM by Hibernate Tools 3.5.0.Final -->
+<hibernate-mapping>
+    <class name="config.Student" table="STUDENT">
+        <id name="studentid" type="int">
+            <column name="STUDENTID" />
+            <generator class="native" />
+        </id>
+        <property name="firstname" type="java.lang.String">
+            <column name="FIRSTNAME" />
+        </property>
+        <property name="lastname" type="java.lang.String">
+            <column name="LASTNAME" />
+        </property>
+        <property name="yearLevel" type="int">
+            <column name="YEARLEVEL" />
+        </property>
+    </class>
+</hibernate-mapping>
